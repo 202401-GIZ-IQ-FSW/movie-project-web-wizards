@@ -33,9 +33,9 @@ export default function GenreMoviesPage() {
     }, [selectedGenre]);
 
     return (
-        <div className="container grid grid-wrap justify-center gap-10 p-5 bg-gradient-to-r from-[#000814] from-10% via-[#001d3d] via-30% to-[#000814] to-90% ...">
+        <div className="flex flex-wrap gap-5 items-center justify-center p-6 bg-gradient-to-r from-[#000814] from-10% via-[#001d3d] via-30% to-[#000814] to-90% ...">
     <h1 className="text-5xl font-bold text-white">Movies</h1>
-    <div className="flex items-center">
+    <div className="items-center">
         <label htmlFor="genreSelect" className="mr-2 text-xl text-[#e0fbfc]">Select Genre:</label>
         <select id="genreSelect" onChange={handleChange} className="flex items-center rounded bg-neutral-100 px-2 pb-2 pt-2 text-xs font-bold uppercase leading-normal text-neutral-600 shadow-light-3 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 focus:bg-neutral-200 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
             <option value="">All Genres</option>
@@ -44,7 +44,7 @@ export default function GenreMoviesPage() {
             ))}
         </select>
     </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-14 justify-center">
+    <div className="flex flex-wrap justify-center gap-12">
         {movies.map(movie => (
             <Link key={movie.id} href={`./movies/${movie.id}`}>
                 <div className="group relative cursor-pointer items-center">
