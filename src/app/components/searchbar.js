@@ -12,11 +12,11 @@ export default function Search() {
     router.push(`/search/${value}`)
   }
   return (
-    <div className="flex flex-1 items-center justify-center p-6 bg-gradient-to-r from-[#000814] from-10% via-[#001d3d] via-30% to-[#000814] to-90% ...">
-      <div className="w-full sm:w-1/3">
-        <form onSubmit={handleSubmit} className="mt-5 sm:flex sm:items-center text-white">
+    <div className="flex flex-1">
+      <div className="w-1/2 sm:w-full">
+        <form onSubmit={handleSubmit} className="mt-5 sm:flex sm:items-center text-[#284b63]">
           <input
-            className="inline w-full rounded-md border border-gray-300 bg-transparent py-2 pl-3 pr-3 leading-5 placeholder-gray-500 focus:border-[#778da9] focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#778da9] sm:text-sm"
+            className="relative m-0 -me-0.5 block flex-auto rounded-s border border-solid border-neutral-200 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill dark:focus:border-primary"
             placeholder="Search for Movies"
             type="search"
             autofocus=""
@@ -25,7 +25,7 @@ export default function Search() {
           />
           <button
             type="submit"
-            class="mt-3 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-[#778da9] px-4 py-2 font-medium text-white shadow-sm hover:bg-[#415a77] focus:outline-none focus:ring-2 focus:ring-[#e0e1dd] focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+            class="z-[2] inline-block rounded-e border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-primary-accent-300 focus:border-primary-600 focus:bg-primary-50/50 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:text-primary-500 dark:hover:bg-blue-950 dark:focus:bg-blue-950"
           >
             Search
           </button>
